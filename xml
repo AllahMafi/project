@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ctr_bg"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_tool"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/ctr_bg"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="C">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="137dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pating"
+                app:layout_collapseMode="parallax" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="140dp"
+                android:text="Context Us"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="464dp"
+        android:layout_height="582dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="310dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/location"
+            android:text="Gold campus lahore"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="90dp"
+            android:drawableStart="@drawable/email"
+            android:paddingTop="0dp"
+            android:text="am3637@gmail.com"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/phone"
+            android:text="03413406789"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+
+
+        <EditText
+            android:id="@+id/textEmail"
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/db_round"
+            android:gravity="top"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="300dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="250dp"
+            android:layout_weight="1"
+            android:background="@drawable/db_round"
+            android:gravity="top"
+            android:hint="Message"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/bt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="350dp"
+            android:padding="10dp"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
